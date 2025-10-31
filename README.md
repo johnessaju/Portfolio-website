@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Portfolio Website
 
 A modern and interactive portfolio website built with Vite and React, featuring Three.js visualizations, smooth animations, and a responsive design. Implements modern web development practices with Tailwind CSS and Framer Motion for an engaging user experience.
 
