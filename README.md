@@ -1,70 +1,87 @@
 # Personal Portfolio Website
 
-A modern and interactive portfolio website built with Next.js, React, and Tailwind CSS, featuring smooth animations and responsive design.
+A modern and interactive portfolio website built with Vite and React, featuring Three.js visualizations, smooth animations, and a responsive design. Implements modern web development practices with Tailwind CSS and Framer Motion for an engaging user experience.
 
 ## 🚀 Features
 
-- Modern, minimalist design
-- Responsive layout with Tailwind CSS
-- Dynamic project showcase
-- Interactive sections with smooth animations
-- Contact form integration
-- Custom icons and assets
-- Mobile-first approach
-- TypeScript implementation
+- Interactive 3D elements and animations using Three.js and React Three Fiber
+- Smooth page transitions and micro-interactions with Framer Motion
+- Responsive layout implementation using Tailwind CSS and modern CSS
+- Dynamic project showcase with hover previews and modal system
+- Interactive experience timeline with animated scroll effects
+- Email integration using EmailJS for contact functionality
+- Custom-built testimonials carousel with dynamic content
+- Fast development and build times using Vite
+- Optimized assets and responsive images for performance
+- Mobile-first design with cross-browser compatibility
 
 ## 🛠 Technologies Used
 
-- Next.js 14
 - React
 - Tailwind CSS
-- TypeScript
+- Email.js
 - Modern CSS practices
+- Framer Motion
+- vite
+- Three.js
 
-## 🏗 Setup and Installation
+## Installation
 
 1. Clone the repository
 
 ```bash
-git clone [your-repo-link]
+git clone https://github.com/johnessaju/Portfolio-website.git
+cd Portfolio-website
 ```
 
-2. Install dependencies
+2. Install dependencies for both client and server
 
 ```bash
+# Install server dependencies
+cd server
+npm install
+
+# Install client dependencies
+cd ../client
 npm install
 ```
 
-3. Create a .env file in the root directory and add your environment variables
-
-```env
-# Add your environment variables here
-```
-
-4. Start the development server
+3. Set up environment variables
 
 ```bash
-npm run dev
+# In the server directory, create a .env file with:
+VITE_EMAIL=abc@gmail.com
+VITE_PUBLIC_KEY=xxxxxxxxx
+VITE_SERVICE_ID=xxxxxxxxx
+VITE_TEMPLATE_ID=xxxxxxxx
 ```
 
-5. Build for production
+4. Run the application
 
 ```bash
-npm run build
+# Run server (from server directory)
+npm start
+
+# Run client (from client directory)
+npm start
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-Portfolio/
-├── public/            # Static assets
-├── src/
-│   ├── app/          # App configuration and pages
-│   ├── assets/       # Images and icons
-│   ├── components/   # Reusable components
-│   └── sections/     # Main page sections
-├── .env              # Environment variables
-└── ...
+client/
+  ├── public/
+  ├── src/
+  │   ├── api/
+  │   ├── components/
+  │   ├── pages/
+  │   ├── redux/
+  │   └── utils/
+server/
+  ├── controllers/
+  ├── middleware/
+  ├── models/
+  └── routes/
 ```
 
 ## ⚙️ Configuration
@@ -75,26 +92,10 @@ Before running the project:
 2. Update constants in `src/constants/` (if needed)
 3. Customize content in respective sections
 
-## 🌐 Deployment
-
-The site can be deployed on platforms like:
-
-- Vercel (recommended for Next.js)
-- Netlify
-- GitHub Pages
 
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 👤 Contact
-
-[Your contact information here]
-
----
 
 ⭐️ If you like this project, give it a ⭐️!
